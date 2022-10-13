@@ -23,6 +23,22 @@ public class Jugador {
 	public String dameDatos() {
 		return "Nombre: " + this.apellido + " - Camiseta N° : " + this.numeroCamiseta + " - Juega de: " + this.posicion.posicion();
 	}
+
+	public boolean esEsteJugador(String apellido) {		
+		return this.apellido.equals(apellido);
+	}
+	
+	public int getNumeroCamiseta() {
+		return this.numeroCamiseta;
+	}
+	
+	public Posicion getPosicion() {
+		return this.posicion;
+	}
+
+	public int damePosicion() {
+		return this.posicion.ordinal();
+	}
 	
 
 }
